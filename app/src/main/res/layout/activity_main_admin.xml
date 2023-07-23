@@ -7,7 +7,6 @@
     android:background="@drawable/login_page_admin__1_"
     tools:context=".MainAdmin">
 
-# tes tes
     <Button
         android:id="@+id/btn_register"
         android:layout_width="200sp"
