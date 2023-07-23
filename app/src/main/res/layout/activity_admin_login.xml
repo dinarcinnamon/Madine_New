@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_admin"
+    tools:context=".AdminLogin">
+
+    <EditText
+        android:id="@+id/username_inputText"
+        android:layout_width="350dp"
+        android:layout_height="35sp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="      ID Admin"
+        android:text=""
+        android:paddingLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_inputText"
+        app:layout_constraintEnd_toEndOf="@+id/password_inputText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_inputText" />
+
+
+    <EditText
+        android:id="@+id/password_inputText"
+        android:layout_width="350dp"
+        android:layout_height="35sp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:inputType="textPassword"
+        android:hint="      Password"
+        android:text=""
+        android:paddingLeft="16dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login_admin"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_admin"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_admin" />
+
+    <ImageView
+        android:id="@+id/imageViewTogglePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_password_hidden"
+        app:layout_constraintBottom_toBottomOf="@+id/password_inputText"
+        app:layout_constraintEnd_toEndOf="@+id/password_inputText"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/password_inputText"
+        app:layout_constraintTop_toTopOf="@+id/password_inputText" />
+
+    <Button
+        android:id="@+id/btn_login_admin"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="Login"
+        android:textColor="@color/purple_200"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnLoginGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/googleg_standard_color_18"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_admin" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_admin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
