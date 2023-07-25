@@ -38,8 +38,6 @@ public class Monitoring extends AppCompatActivity {
         Button boxB2 = findViewById(R.id.parking_b2);
         Button boxB3 = findViewById(R.id.parking_b3);
         Button boxB4 = findViewById(R.id.parking_b4);
-        Button boxB5 = findViewById(R.id.parking_b5);
-        Button boxB6 = findViewById(R.id.parking_b6);
 
         ColorStateList RED = ColorStateList.valueOf(Color.RED); // Ganti dengan warna yang diinginkan
         ColorStateList GREEN = ColorStateList.valueOf(Color.GREEN); // Ganti dengan warna yang diinginkan
@@ -51,8 +49,8 @@ public class Monitoring extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Mendapatkan nilai email dari setiap child
-                String[] states = new String[12];
-                View[] boxes = {boxA1, boxA2, boxA3,boxA4, boxA5, boxA6, boxB1, boxB2, boxB3,boxB4, boxB5, boxB6};
+                String[] states = new String[10];
+                View[] boxes = {boxA1, boxA2, boxA3,boxA4, boxA5, boxA6, boxB1, boxB2, boxB3,boxB4};
                 states[0] = dataSnapshot.child("A1").child("status").getValue(String.class);
                 states[1] = dataSnapshot.child("A2").child("status").getValue(String.class);
                 states[2] = dataSnapshot.child("A3").child("status").getValue(String.class);
@@ -64,8 +62,7 @@ public class Monitoring extends AppCompatActivity {
                 states[7] = dataSnapshot.child("B2").child("status").getValue(String.class);
                 states[8] = dataSnapshot.child("B3").child("status").getValue(String.class);
                 states[9] = dataSnapshot.child("B4").child("status").getValue(String.class);
-                states[10] = dataSnapshot.child("B5").child("status").getValue(String.class);
-                states[11] = dataSnapshot.child("B6").child("status").getValue(String.class);
+
 
                 for (int i = 0; i < states.length; i++) {
                     if (states[i].equalsIgnoreCase("Empty")) {

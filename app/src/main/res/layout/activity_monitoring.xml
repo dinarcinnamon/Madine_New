@@ -39,7 +39,7 @@
         android:layout_width="66dp"
         android:layout_height="118dp"
         android:layout_marginStart="35dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/green"
         android:text="A3"
         app:cornerRadius="0sp"
         app:layout_constraintBottom_toBottomOf="@+id/parking_a2"
@@ -81,7 +81,7 @@
         android:layout_width="66dp"
         android:layout_height="118dp"
         android:layout_marginStart="35dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/red"
         android:text="A6"
         app:cornerRadius="0sp"
         app:layout_constraintBottom_toBottomOf="@+id/parking_a5"
@@ -131,47 +131,20 @@
         app:layout_constraintTop_toTopOf="@+id/parking_b2"
         app:layout_constraintVertical_bias="0.0" />
 
+
+
     <Button
         android:id="@+id/parking_b4"
         android:layout_width="66dp"
         android:layout_height="118dp"
-        android:layout_marginEnd="35dp"
-        android:backgroundTint="@color/green"
-        android:text="B4"
-        app:cornerRadius="0sp"
-        app:layout_constraintBottom_toBottomOf="@+id/parking_b5"
-        app:layout_constraintEnd_toStartOf="@+id/parking_b5"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/parking_b5"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/parking_b5"
-        android:layout_width="66dp"
-        android:layout_height="118dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/green"
-        android:text="B5"
+        android:text="B4"
         app:cornerRadius="0sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/parking_b2" />
-
-    <Button
-        android:id="@+id/parking_b6"
-        android:layout_width="66dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="35dp"
-        android:backgroundTint="@color/green"
-        android:text="B6"
-        app:cornerRadius="0sp"
-        app:layout_constraintBottom_toBottomOf="@+id/parking_b5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/parking_b5"
-        app:layout_constraintTop_toTopOf="@+id/parking_b5"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/btnBack"
